@@ -7,6 +7,7 @@ import { fetchPokemonByName } from '@/libs/fetchPokemon'
 
 export default function HomePage() {
   const [keyword, setKeyword] = useState('')
+
   const { data: pokemon, error } = useQuery({
     queryKey: ['pokemon', keyword],
     queryFn: () => fetchPokemonByName(keyword),

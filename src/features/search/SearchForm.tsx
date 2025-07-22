@@ -29,7 +29,7 @@ export function SearchForm({ onSearch, error }: SearchFormProps) {
         error={!!inputErrors.keyword || !!error}
         helperText={inputErrors.keyword?.message || error?.message}
       />
-      <Button type="submit" variant="contained">
+      <Button type="submit" variant="contained" color="primary">
         검색
       </Button>
     </Box>
