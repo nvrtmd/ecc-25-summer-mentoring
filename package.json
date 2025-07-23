@@ -24,5 +24,10 @@
     "globals": "^16.3.0",
     "msw": "^2.10.4",
     "vite": "^7.0.4"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
